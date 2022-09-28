@@ -9,7 +9,7 @@ const Cards = (props) => {
             <img src={img} alt="" />
             <div>
                 <h5>{activity}</h5>
-                <h6>Time: {time} Hours</h6>
+                <p>Time: {time} Hours</p>
             </div>
             <button>Add to List</button>
         </div>
