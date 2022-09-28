@@ -2,6 +2,7 @@ import React from 'react';
 import './Activitys.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
+import Blogs from '../Blogs/Blogs';
 
 const Activitys = () => {
     return (
@@ -13,6 +14,7 @@ const Activitys = () => {
             <div className='activitys'>
 
             </div>
+            <Blogs></Blogs>
         </div>
     );
 };
