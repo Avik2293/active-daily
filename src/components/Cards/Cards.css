@@ -1,0 +1,14 @@
+.each-card{
+    border: 2px solid;
+    padding: 5px;
+}
+
+div img{
+    width: 100%;
+    height: 60%;
+}
+
+div button{
+    width: 100%;
+    background-color: aqua;
+}

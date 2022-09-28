@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "activity": "Hero Course Video",
+    "time": 3.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/premium-vector/international-day-webmasters-programmer-is-sitting-computer-vector-illustration-topic-design-programming-freelancing_499739-429.jpg?w=740"
+  },
+  {
+    "id": "2",
+    "activity": "Course Practise",
+    "time": 3.00,
+    "time-formet": "Hours",
+    "img": "https://as2.ftcdn.net/v2/jpg/04/60/17/03/1000_F_460170335_wlmxev7ji4mbxlDLtBqPeLh1ZcQlllt0.jpg"
+  },
+  {
+    "id": "3",
+    "activity": "Free Walk In Road",
+    "time": 1.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/free-vector/moving-forward-concept-illustration_114360-1641.jpg?w=740&t=st=1664378503~exp=1664379103~hmac=7281b5d46617325841dbb2ac341d76c804425d47dc7df4ecb68d1ec7988593e5"
+  },
+  {
+    "id": "4",
+    "activity": "Exercise",
+    "time": 0.50,
+    "time-formet": "Hours",
+    "img": "https://as1.ftcdn.net/v2/jpg/04/63/22/88/1000_F_463228873_1KID6Jha673uThoULyfqnCqm9GQmMypU.jpg"
+  },
+  {
+    "id": "5",
+    "activity": "Study",
+    "time": 2.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/free-photo/upset-dark-skinned-man-has-bored-expression-keeps-hands-cheek-wears-spectacles-green-sweater-surrounded-with-many-books_273609-24522.jpg?w=740&t=st=1664378726~exp=1664379326~hmac=4d59ca1cfa24c96e54fec25adf1fdc2e71790cc79c04b1fa8d7f1f0710b36761"
+  },
+  {
+    "id": "6",
+    "activity": "Movie",
+    "time": 2.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/free-photo/funny-young-dark-skinned-man-sitting-grey-sofa-living-room-with-notebook-pc-his-lap-staring-screen-with-shocked-scared-look-covering-mouth-with-hand-while-watching-scary-movie_273609-1058.jpg?w=740&t=st=1664378874~exp=1664379474~hmac=e08e1d8ed1c100f3a0da047bddc179d96bba2264bfaf295e692f8c6a98520d02"
+  },
+  {
+    "id": "7",
+    "activity": "Facebook",
+    "time": 1.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/free-photo/loei-thailand-may-10-2017-hand-holding-samsung-s8-with-mobile-application-facebook-screen_1232-4912.jpg?w=740&t=st=1664379000~exp=1664379600~hmac=c1bda85790dc2bcd55611f2523207115595cd43152137f76463a3c71dd22df06"
+  },
+  {
+    "id": "8",
+    "activity": "Time With Friends",
+    "time": 2.00,
+    "time-formet": "Hours",
+    "img": "https://img.freepik.com/free-vector/group-discussion-concept-illustration_114360-8522.jpg?t=st=1664379117~exp=1664379717~hmac=8685aa2839dbbed7f1b67c09fa76d2a02ecfc067974092de920f903c5103e027"
+  }
+]
