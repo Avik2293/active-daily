@@ -1,0 +1,7 @@
+.side-container {
+    display: grid;
+    position: sticky;
+    top: 0px;
+    background-color:beige;
+    
+}
