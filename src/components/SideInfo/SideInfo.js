@@ -5,7 +5,7 @@ import myPic from '../../myPic.jpg';
 import toast, { Toaster } from 'react-hot-toast';
 
 const SideInfo = (props) => {
-    const { totalTime } = props.totalTime;
+    const { totalTime } = props;
     let [breakTime, setBreakTime] = useState(0);
     // console.log(totalTime);
 
