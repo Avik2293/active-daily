@@ -11,7 +11,7 @@ const Cards = (props) => {
                 <h5>{activity}</h5>
                 <p>Time: {time} Hours</p>
             </div>
-            <button>Add to List</button>
+            <button className='card-btn'>Add to List</button>
         </div>
     );
 };

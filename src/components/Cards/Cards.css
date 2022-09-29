@@ -12,7 +12,7 @@ div img{
     border-radius: 8px;
 }
 
-div button{
+.card-btn{
     width: 95%;
     background-color: aqua;
     position: absolute;
