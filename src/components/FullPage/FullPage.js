@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import Activitys from '../Activitys/Activitys';
 import Blogs from '../Blogs/Blogs';
 import Cards from '../Cards/Cards';
 import Header from '../Header/Header';
@@ -9,6 +8,7 @@ import './FullPage.css'
 
 const FullPage = () => {
     const [activitys, setActivitys] = useState([]);
+    let [totalTime, setTotalTime] = useState(0);
 
     useEffect(() => {
         fetch('activity.json')
@@ -17,19 +17,24 @@ const FullPage = () => {
             .then(data => setActivitys(data))
     }, [])
     
+    const addTime = (activityTime) => {
+        let newTotalTime;
+        newTotalTime = totalTime + activityTime.time;
+        setTotalTime(newTotalTime);
+    };
+
     return (
         <div className='page-view'>
             <div>
                 <Header></Header>
                 <div className='cards-container'>
                 {
-                    // activitys.map(activity => <Activitys activity={activity} key={activity.id}></Activitys>)
-                    activitys.map(activity => <Cards activity={activity} key={activity.id}></Cards>)
+                    activitys.map(activity => <Cards eachActivity={activity} key={activity.id} addTime={addTime}></Cards>)
                 }
                 </div>
                 <Blogs></Blogs>
             </div>
-            <SideInfo></SideInfo>
+            <SideInfo totalTime={totalTime}></SideInfo>
         </div>
     );
 };

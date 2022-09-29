@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './SideInfo.css';
 import myPic from '../../myPic.jpg';
 
-const SideInfo = () => {
-
+const SideInfo = (props) => {
+    const {totalTime} = props.totalTime;
     let [breakTime, setBreakTime] = useState(0);
-    console.log(breakTime);
+    console.log(totalTime);
     return (
         <div className='side-container'>
             <div className='my-info'>
@@ -32,7 +32,7 @@ const SideInfo = () => {
             </div>
             <div className='details'>
                 <h4>Activity Details</h4>
-                <h5 className='details-text'>Activity Time: {} Hours</h5>
+                <h5 className='details-text'>Activity Time: {totalTime} Hours</h5>
                 <h5 className='details-text'>Break Time: {breakTime} minutes</h5>
             </div>
            <button className='complete-btn'><h3>Activity Completed</h3></button>

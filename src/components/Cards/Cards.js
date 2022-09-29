@@ -2,7 +2,8 @@ import React from 'react';
 import './Cards.css';
 
 const Cards = (props) => {
-    const { activity, img, time } = props.activity;
+    const {eachActivity, addTime} = props;
+    const { activity, img, time } = eachActivity;
     // console.log(props);
     return (
         <div className='each-card'>
@@ -11,7 +12,7 @@ const Cards = (props) => {
                 <h5>{activity}</h5>
                 <p>Time: {time} Hours</p>
             </div>
-            <button className='card-btn'>Add to List</button>
+            <button className='card-btn' onClick={() => addTime(time)}>Add to List</button>
         </div>
     );
 };
