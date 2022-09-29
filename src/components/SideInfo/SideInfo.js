@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './SideInfo.css';
 import myPic from '../../myPic.jpg';
 
@@ -7,9 +7,19 @@ import toast, { Toaster } from 'react-hot-toast';
 const SideInfo = (props) => {
     const { totalTime } = props.totalTime;
     let [breakTime, setBreakTime] = useState(0);
-    console.log(totalTime);
+    // console.log(totalTime);
 
     const notify = () => toast('Hurrey, You Have Done It. You Completed Managing All Your Activitys.');
+
+    function setTime(time){
+        setBreakTime(time);
+        const setLocalStorage = localStorage.setItem('break-time', time);
+    }
+    
+    useEffect(() => {
+        const localstorageData = localStorage.getItem('break-time');
+        setBreakTime(localstorageData);
+    }, [])
 
     return (
         <div className='side-container'>
@@ -28,11 +38,11 @@ const SideInfo = (props) => {
             <div className='break-time'>
                 <h4>Its Break Time: </h4>
                 <div className='break-btn'>
-                    <button onClick={() => setBreakTime(10)}>10m</button>
-                    <button onClick={() => setBreakTime(20)}>20m</button>
-                    <button onClick={() => setBreakTime(30)}>30m</button>
-                    <button onClick={() => setBreakTime(40)}>40m</button>
-                    <button onClick={() => setBreakTime(50)}>50m</button>
+                    <button onClick={() => setTime(10)}>10m</button>
+                    <button onClick={() => setTime(20)}>20m</button>
+                    <button onClick={() => setTime(30)}>30m</button>
+                    <button onClick={() => setTime(40)}>40m</button>
+                    <button onClick={() => setTime(50)}>50m</button>
                 </div>
             </div>
             <div className='details'>

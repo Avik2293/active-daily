@@ -19,7 +19,7 @@ const FullPage = () => {
     
     const addTime = (activityTime) => {
         let newTotalTime;
-        newTotalTime = totalTime + activityTime.time;
+        newTotalTime = totalTime + activityTime;
         setTotalTime(newTotalTime);
     };
 
