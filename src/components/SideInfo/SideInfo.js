@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import './SideInfo.css';
 import myPic from '../../myPic.jpg';
 
+import toast, { Toaster } from 'react-hot-toast';
+
 const SideInfo = (props) => {
-    const {totalTime} = props.totalTime;
+    const { totalTime } = props.totalTime;
     let [breakTime, setBreakTime] = useState(0);
     console.log(totalTime);
+
+    const notify = () => toast('Hurrey, You Have Done It. You Completed Managing All Your Activitys.');
+
     return (
         <div className='side-container'>
             <div className='my-info'>
@@ -35,9 +40,13 @@ const SideInfo = (props) => {
                 <h5 className='details-text'>Activity Time: {totalTime} Hours</h5>
                 <h5 className='details-text'>Break Time: {breakTime} minutes</h5>
             </div>
-           <button className='complete-btn'><h3>Activity Completed</h3></button>
+            <div>
+                <button className='complete-btn' onClick={notify}><h3>Activity Completed</h3></button>
+                <Toaster />
+            </div>
         </div>
     );
+
 };
 
 export default SideInfo;
